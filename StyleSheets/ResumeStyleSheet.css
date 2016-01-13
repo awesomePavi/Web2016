@@ -1,0 +1,62 @@
+/********************* Colour reference chart****************
+*************************** comment ********* colour ******** 
+
+c1              #000000
+c2				#101010
+c3				#FFFFFF
+c4				#009F33
+c5				#042915
+c6				#5B5B5B
+
+*/
+
+.c1Color{color: /*c1*/#000000;}
+.c2Color{color: /*c2*/#101010;}
+.c3Color{color: /*c3*/#FFFFFF;}
+.c4Color{color: /*c4*/#009F33;}
+.c5Color{color: /*c5*/#042915;}
+.c6Color{color: /*c6*/#5B5B5B;}
+
+.c1Bg{background: /*c1*/#000000;}
+.c2Bg{background: /*c2*/#101010;}
+.c3Bg{background: /*c3*/#FFFFFF;}
+.c4Bg{background: /*c4*/#009F33;}
+.c5Bg{background: /*c5*/#042915;}
+.c6Bg{background: /*c6*/#5B5B5B;}
+
+.fontSmall{font-size: 70%;}
+.fontMedium{font-size: 80%;}
+.fontLarge{font-size: 90%;}
+
+.headerSmall{font-size: 160%;}
+.headerMedium{font-size: 200%;}
+.headerLarge{font-size: 310%;}
+
+.wid80{
+	width:80%;
+}
+
+.wid60{
+	width:60%;
+}
+
+.wid40{
+	width:40%;
+}
+
+div.rect{
+  border:5px solid /*c4*/#009F33; border-radius: 25px; 
+}
+
+hr.hide {visibility:hidden;}
+hr.paddingmin{height:0px;}
+hr.split{width:35%; height:.2em; border:none;}
+
+
+body {margin : 0px; Font-family : Arial, Helvetica, sans-serif; background: /*c1*/#000000;}
+.topLinks{margin-top: 1%; margin-right: 3%;}
+a.topLinks{margin: 2%;}
+
+.topName{margin-left: 6%;}
+
+.noDecoration{text-decoration:none;}
