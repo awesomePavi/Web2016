@@ -44,6 +44,48 @@ c6				#5B5B5B
 	width:40%;
 }
 
+.min100{
+	min-width: 200px;
+}
+
+.min150{
+	min-width: 150px;
+}
+
+.min200{
+	min-width: 200px;
+}
+
+.min250{
+	min-width: 250px;
+}
+
+.min300{
+	min-width: 300px;
+}
+
+.minn350{
+	min-width: 350px;
+}
+
+
+.card{
+	min-width: 200px;
+	width:25%;
+	min-height: 50px;
+	padding-: 10px;
+	margin: 10px;
+	border:15px solid /*c4*/#009F33; 
+    border-radius: 25px; 
+}
+
+#contactsBox{
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 div.rect{
   border:5px solid /*c4*/#009F33; border-radius: 25px; 
 }
@@ -60,3 +102,7 @@ a.topLinks{margin: 2%;}
 .topName{margin-left: 6%;}
 
 .noDecoration{text-decoration:none;}
+.center{text-align: center;}
+.iconAlign{vertical-align: middle;}
+.iconFontSmall{ height: 1.8em; width: 1.8em;}
+.padding5{padding:4px;}
