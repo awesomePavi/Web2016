@@ -43,9 +43,15 @@ c6				#5B5B5B
 .wid40{
 	width:40%;
 }
+.wid90{
+	width:90%;
+}
+.wid25{
+	width:25%;
+}
 
 .min100{
-	min-width: 200px;
+	min-width: 100px;
 }
 
 .min150{
@@ -68,7 +74,6 @@ c6				#5B5B5B
 	min-width: 350px;
 }
 
-
 .card{
 	min-width: 200px;
 	width:25%;
@@ -79,6 +84,29 @@ c6				#5B5B5B
     border-radius: 25px; 
 }
 
+.cardResume{
+	min-height: 50px;
+	padding-: 10px;
+	margin: 10px;
+}
+
+.resumeBtn {
+    background-color: /*c4*/#009F33;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.borderResumec1{border:15px solid /*c1*/#000000; }
+.borderResumec2{border:15px solid  /*c2*/#101010;}
+.borderResumec3{border:15px solid /*c3*/#FFFFFF;}
+.borderResumec4{border:15px solid /*c4*/#009F33;}
+.borderResumec5{border:15px solid /*c5*/#042915;}
+.borderResumec6{border:15px solid /*c6*/#5B5B5B;}
+
+
 #contactsBox{
   box-sizing: border-box;
   justify-content: center;
@@ -87,9 +115,22 @@ c6				#5B5B5B
 }
 
 div.rect{
-  border:5px solid /*c4*/#009F33; border-radius: 25px; 
+  border:5px solid /*c4*/#009F33; 
 }
 
+
+li.horizontalPoints{
+	float:left;
+	 padding-left: 10px; 
+	 padding-right: 10px;"
+}
+.borderRad25{border-radius: 25px;}
+.borderRad2{border-radius: 2px;}
+
+.center{display: block;
+    	margin-left: auto;
+   		 margin-right: auto;
+   		}
 hr.hide {visibility:hidden;}
 hr.paddingmin{height:0px;}
 hr.split{width:35%; height:.2em; border:none;}
@@ -100,7 +141,6 @@ body {margin : 0px; Font-family : Arial, Helvetica, sans-serif; background: /*c1
 a.topLinks{margin: 2%;}
 
 .topName{margin-left: 6%;}
-
 .noDecoration{text-decoration:none;}
 .center{text-align: center;}
 .iconAlign{vertical-align: middle;}
