@@ -1,14 +1,29 @@
 /********************* Colour reference chart****************
 *************************** comment ********* colour ******** 
 
-c1              #000000
+c1        #000000
 c2				#101010
 c3				#FFFFFF
 c4				#009F33
 c5				#042915
-c6				#5B5B5B
-
+c6				#5B5B5B 
+c7        #EEEEEE
+mac       #990033
+nhs       #800080
+CTW       #007CC2
+HW        #463EAC
+HET       #00A652
 */
+
+a.topLinks:hover {border-style:  solid; border-color: /*c3*/#FFFFFF #000000; font-size: 150%;}
+.topLinks{margin-top: 1%; margin-right: 3%;}
+a.topLinks{margin: 2%;}
+a.topLinksSelected{margin: 2%; font-size: 110%;}
+a.topLinksMakeHeight{margin: 2%; font-size: 150%;}
+
+a.c3Link:hover{text-decoration:none; color: /*c7*/#EEEEEE;}
+a.c3Link{text-decoration:none; color: /*c3*/#FFFFFF;}
+img{max-width: 300px;}
 
 .c1Color{color: /*c1*/#000000;}
 .c2Color{color: /*c2*/#101010;}
@@ -16,6 +31,12 @@ c6				#5B5B5B
 .c4Color{color: /*c4*/#009F33;}
 .c5Color{color: /*c5*/#042915;}
 .c6Color{color: /*c6*/#5B5B5B;}
+.c7Color{color: /*c7*/#EEEEEE;}
+.macColor{color: /*mac*/#990033;}
+.nhsColor{color: /*nhs*/#800080;}
+.CTWColor{color: /*CTW*/#4fb5ef;}
+.HWColor{color: /*HW*/#463EAC;}
+.HETColor{color: /*HET*/#8ec641;}
 
 .c1Bg{background: /*c1*/#000000;}
 .c2Bg{background: /*c2*/#101010;}
@@ -23,56 +44,34 @@ c6				#5B5B5B
 .c4Bg{background: /*c4*/#009F33;}
 .c5Bg{background: /*c5*/#042915;}
 .c6Bg{background: /*c6*/#5B5B5B;}
+.c7Bg{background: /*c7*/#EEEEEE;}
+.macBg{background: /*mac*/#990033;}
+.nhsBg{background: /*nhs*/#800080;}
+.CTWBg{background: /*CTW*/#4fb5ef;}
+.HWBg{background: /*HW*/#463EAC;}
+.HETBg{background: /*HET*/#8ec641;}
 
 .fontSmall{font-size: 70%;}
 .fontMedium{font-size: 80%;}
 .fontLarge{font-size: 90%;}
 
+.headerExtraSmall{font-size: 120%;}
 .headerSmall{font-size: 160%;}
 .headerMedium{font-size: 200%;}
 .headerLarge{font-size: 310%;}
 
-.wid80{
-	width:80%;
-}
-
-.wid60{
-	width:60%;
-}
-
-.wid40{
-	width:40%;
-}
-.wid90{
-	width:90%;
-}
-.wid25{
-	width:25%;
-}
-
-.min100{
-	min-width: 100px;
-}
-
-.min150{
-	min-width: 150px;
-}
-
-.min200{
-	min-width: 200px;
-}
-
-.min250{
-	min-width: 250px;
-}
-
-.min300{
-	min-width: 300px;
-}
-
-.minn350{
-	min-width: 350px;
-}
+.widFullCard{width:100%  +15px;margin:0 -15px;}
+.wid80{width:80%;}
+.wid60{width:60%;}
+.wid40{width:40%;}
+.wid90{width:90%;}
+.wid25{width:25%;}
+.min100{min-width: 100px;}
+.min150{min-width: 150px;}
+.min200{min-width: 200px;}
+.min250{min-width: 250px;}
+.min300{min-width: 300px;}
+.minn350{min-width: 350px;}
 
 .card{
 	min-width: 200px;
@@ -99,13 +98,21 @@ c6				#5B5B5B
     cursor: pointer;
 }
 
-.borderResumec1{border:15px solid /*c1*/#000000; }
-.borderResumec2{border:15px solid  /*c2*/#101010;}
+.borderResumec1{border:15px solid /*c1*/#000000;}
+.borderResumec2{border:15px solid /*c2*/#101010;}
 .borderResumec3{border:15px solid /*c3*/#FFFFFF;}
 .borderResumec4{border:15px solid /*c4*/#009F33;}
 .borderResumec5{border:15px solid /*c5*/#042915;}
 .borderResumec6{border:15px solid /*c6*/#5B5B5B;}
+.borderResumec7{border:15px solid /*c7*/#EEEEEE;}
 
+.tableBorderc1{border-style: solid; border-color: /*c1*/#000000;}
+.tableBorderc2{border-style: solid; border-color: /*c2*/#101010;}
+.tableBorderc3{border-style: solid; border-color: /*c3*/#FFFFFF;}
+.tableBorderc4{border-style: solid; border-color: /*c4*/#009F33;}
+.tableBorderc5{border-style: solid; border-color: /*c5*/#042915;}
+.tableBorderc6{border-style: solid; border-color: /*c6*/#5B5B5B;}
+.tableBorderc7{border-style: solid; border-color: /*c7*/#EEEEEE;}
 
 #contactsBox{
   box-sizing: border-box;
@@ -114,9 +121,13 @@ c6				#5B5B5B
   flex-wrap: wrap;
 }
 
-div.rect{
-  border:5px solid /*c4*/#009F33; 
-}
+.rectc15{border:5px solid /*c1*/#000000;}
+.rectc25{border:5px solid /*c2*/#101010;}
+.rectc35{border:5px solid /*c3*/#FFFFFF;}
+.rectc45{border:5px solid /*c4*/#009F33;}
+.rectc55{border:5px solid /*c5*/#042915;}
+.rectc65{border:5px solid  /*c6*/#5B5B5B;}
+.rectc75{border:5px solid  /*c7*/#EEEEEE;}
 
 
 li.horizontalPoints{
@@ -134,11 +145,6 @@ li.horizontalPoints{
 hr.hide {visibility:hidden;}
 hr.paddingmin{height:0px;}
 hr.split{width:35%; height:.2em; border:none;}
-
-
-body {margin : 0px; Font-family : Arial, Helvetica, sans-serif; background: /*c1*/#000000;}
-.topLinks{margin-top: 1%; margin-right: 3%;}
-a.topLinks{margin: 2%;}
 
 .topName{margin-left: 6%;}
 .noDecoration{text-decoration:none;}

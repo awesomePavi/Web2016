@@ -1,0 +1,12 @@
+/********************* Colour reference chart****************
+*************************** comment ********* colour ******** 
+
+c1              #000000
+c2				#101010
+c3				#FFFFFF
+c4				#009F33
+c5				#042915
+c6				#5B5B5B
+
+*/
+body {margin : 0px; Font-family : Arial, Helvetica, sans-serif; background: /*c1*/#000000;}

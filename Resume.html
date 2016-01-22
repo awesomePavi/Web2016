@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="StyleSheets/ResumeStyleSheetBody.css" rel="stylesheet" type="text/css">
 	<link href="StyleSheets/ResumeStyleSheet.css" rel="stylesheet" type="text/css">
+
 	<title>Resume</title>
 </head>
 <link rel="shortcut icon" href="Icons/web-ico-infi.png">
 <body>
+
 <!--Top Menu -->
 <div>
 	<table width=100%>
-		<td width =30%>
+		<td >
 			<div align = "left" class="c4Color noDecoration topName">
 				Pavithran Pathmarajah
 			</div>
 		</td>
-		<td width = 70%>
+		<td >
+		
 		<div align = "right" class="c3Color noDecoration topLinks fontSmall">
+				<a class="topLinksMakeHeight noDecoration c1Color"></a>
+				<a class="topLinks noDecoration c3Color" href="ResumeExpand.html">Expand All</a>
 				<a class="topLinks noDecoration c3Color" href="index.html">Home</a>
 				<a class="topLinks noDecoration c3Color" href="Portfolio.html">Portfolio</a> 
-				<a class="topLinks noDecoration c4Color">Resume</a> 
+				<a class="topLinksSelected noDecoration c4Color">Resume</a> 
 				<a class="topLinks noDecoration c3Color" href="Contact.html">Contact</a>
 			</div>
 		</td>
 	</table>
 </div>
-<div class="cardResume c3Color c4Bg borderResumec4 borderRad2" >
-	Highlights Of Qualifications
+<div onmouseenter="highlight(this);highlightPoint('HOQ1');highlightHead('RH1');highlightPoint('HOQ2');highlightPoint('HOQ3');highlightPoint('HOQ4');highlightHead('RH1');"onmouseleave="dehighlight(this);dehighlightPoint('HOQ1');dehighlightPoint('HOQ2');dehighlightPoint('HOQ3');dehighlightPoint('HOQ4');dehighlightHead('RH1');" class="cardResume c1Color c7Bg borderResumec7 borderRad2" >
+	<a id="RH1"class="c1Color headerExtraSmall"> Highlights Of Qualifications</a>
 	<hr>
-	<div class="rect c3Color c4Bg wid90 borderRad2s" style="padding-left:5px;">
+	<div id="HOQ1" class="rect rectc75 c7Bg wid90 borderRad2s" style="padding-left:5px;">
 		<li>Am Able to work effetively in a varety of work enviroments. With Real life expereince in places ranging from a gas station to a bookkeeping firm. Working independently and in teams adjusting as neccesary.
 	</div>
-	<div class="rect c3Color c4Bg wid90 borderRad2s" style="padding-left:5px;">
-		<li>Am able to learn hardware interfaces quickly and integrate, it with software effectively
+	<div id="HOQ2" class="rect rectc75 c7Bg wid90 borderRad2s" style="padding-left:5px;">
+		<li>Am able to learn hardware interfaces quickly and integrate it with software effectively
 	</div>
-	<div class="rect c3Color c4Bg wid90 borderRad2s" style="padding-left:5px;">
-		<li>Am proficent in front end and design work, with ability in back end work; a quick study for most languages. 
+	<div  id="HOQ3" class="rect rectc75 c7Bg wid90 borderRad2s" style="padding-left:5px;">
+		<li>Am able in both front and design work and back end design work as neccesary
+	</div>
+	<div  id="HOQ4" class="rect rectc75 c7Bg wid90 borderRad2s" style="padding-left:5px;">
+		<li>Am a fast learner who is always ready to learn something new
 	</div>
 </div>
-<div class="cardResume c3Color c5Bg borderResumec5 borderRad2" >
-	Education
+<div onmouseenter="highlight(this);highlightHead('RH2');" onmouseleave="dehighlight(this);dehighlightHead('RH2');" class="cardResume c1Color c7Bg borderResumec7 borderRad2" >
+	<a id="RH2"class="c1Color headerExtraSmall"> Education</a>
 	<hr>
-
+	<div id="MacStuff" class="rect widFullCard" onmouseover="EduU()" onmouseleave="EduUBye()">
+	<div style="padding:15px">
 	<table width="100%">
 		<td width=70%>
 			<span style="float: left;"><b>Bachelor of Software Engineering</b></span>
 			<span style="float: right;"><b>Class of 2019</b></span>
 			<br>
-			<span style="float: left;">McMaster University, Hamilton, ON.</span>
+			<div id="uniLine"></div>
+			<span style="float: left;">McMaster University, Hamilton ON.</span>
 			<br>
 			<Br>
 			<table>
+			<tr id="uniSkills"></tr>
 			<tr>
 				<td>
 					<li></li>
@@ -58,6 +70,7 @@
 					Currently enrolled in a degree completion program which focuses on the design and maintenance of software
 				</td>
 			</tr>
+			<tr><td></td><td><a class="fontSmall"></a></td></tr>
 			<tr>
 				<td>
 					<li></li>
@@ -74,16 +87,22 @@
 			</a>
 		</td>
 	</table>
-	<br>
+	<div id="MacToFill"></div>
+	</div>
+	</div>
+	<div id="NHSStuff" class="rect widFullCard"  onmouseover="EduH()" onmouseleave="EduHBye()">
+	<div style="padding: 15px">
 	<table width="100%">
 		<td width=70%>
 			<span style="float: left;"><b>High School Diploma, Buisness</b></span>
 			<span style="float: right;"><b>Class of 2014</b></span>
 			<br>
-			<span style="float: left;"></span>Newmarket High School, Newmarket, ON.</span>
+			<div id="NHSLine"></div>
+			<span style="float: left;"></span>Newmarket High School, Newmarket ON.</span>
 		<br>
 			<Br>
 			<table>
+			<tr id="NHSSkills"></tr>
 			<tr>
 				<td>
 					<li></li>
@@ -92,6 +111,7 @@
 					Graduated with Specalist High School Major in Business, which is given to students who push their main focus toward business learning throughout highschool
 				</td>
 			</tr>
+			<tr><td></td><td><a class="fontSmall"></a></td></tr>
 			<tr>
 				<td>
 					<li></li>
@@ -108,205 +128,128 @@
 				</a>
 		</td>
 	</table>
+	<div id="NHSToFill">
+
+		</div>
+	</div>
+	</div>
 </div>
-<div class="cardResume c3Color c6Bg borderResumec6 borderRad2" >
-	Technical Skills
+
+<div onmouseenter="highlight(this); highlightHead('RH5'); "; onmouseleave="dehighlight(this); dehighlightHead('RH5');"; class="cardResume c1Color c7Bg borderResumec7 borderRad2">
+<a id="RH5"class="c1Color headerExtraSmall"> Relevant Experince</a>
+<hr>
+<div id="HWStuff" class="rect widFullCard"  onmouseover="REHW()" onmouseleave="REHWBye()">
+<div style="padding: 0px 15px 0px 15px">
+	<table width="100%">
+		<td width=70%>
+			<span style="float: left;"><b>Hack Western</b></span>
+			<span style="float: right;"><b>November 2015</b></span>
+			<br>
+			<div id="uniLine"></div>
+			<spans tyle="float: left;">Western University, London ON.</span>
+			<br>
+			<div id="HWdev"></div>
+		</td>
+		<td width=30%>
+			<a href="http://hackwestern2.devpost.com/" >
+				<img id="HWimg" src="Images/HackWestern.png" width="20%" class="center">
+			</a>
+		</td>
+	</table>
+	<div id="HWfill"></div>
+</div>
+</div>
+<div id="CTWStuff" class="rect widFullCard"  onmouseover="RECTW()" onmouseleave="RECTWBye()">
+<div style="padding: 0px 15px 0px 15px">
+	<table width="100%">
+		<td width=70%>
+			<br>
+			<span style="float: left;"><b>Code To Win Finals</b></span>
+			<span style="float: right;"><b>November 2015</b></span>
+			<br>
+			<div id="uniLine"></div>
+			<span style="float: left;">The Tannery, Kitchener ON.</span>
+			<br>
+			<Br>
+		</td>
+		<td width=30%>
+			<a href="https://www.communitech.ca/how-we-help/talent/code-to-win/" >
+				<img id="CTWimg"src="Images/communitech_logo.png" width="80%" class="center">
+			</a>
+		</td>
+	</table>
+	<div id="CTWfill"></div>
+</div>
+</div>
+<div id="HETStuff" class="rect widFullCard"  onmouseover="REHET()" onmouseleave="REHETBye()">
+<div style="padding: 0px 15px 0px 15px">
+	<table width="100%">
+		<td width=70%>
+			<span style="float: left;"><b>Hacking Eating Tracking</b></span>
+			<span style="float: right;"><b>September 2015</b></span>
+			<br>
+			<div id="uniLine"></div>
+			<span style="float: left;">Harvard College, Cambridge MA.</span>
+			<br>
+			<Br>
+		</td>
+		<td width=30%>
+			<a href="http://www.mcmaster.ca/" >
+				<img id="HETimg" src="Images/HackingEatingTracking.png" width="40%" class="center">
+			</a>
+		</td>
+	</table>
+	<div id="HETfill"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div onmouseenter="highlight(this); highlightSkills(); highlightHead('RH3'); closeOff()" onmouseleave="dehighlight(this); dehighlightSkills();dehighlightHead('RH3');" class="cardResume c1Color c7Bg borderResumec7 borderRad2" >
+	<a id="RH3"class="c1Color headerExtraSmall"> Technical Skills</a>
 	<hr>
 	<table width=100%>
 	<tr>
-	<td width=25% div id="B2" onmouseover="Programming(TechSkills)" class="rect c3Color c4Bg" align="center">
+	<td width=25% div id="B2" onmouseover="Programming(TechSkills)" class="tableBorderc3 c4Bg" align="center">
 		Programming
 		</td>
-		<td width=25% id="B1" onmouseover="Software(TechSkills)" class="c3Color c4Bg" align="center">Software
+		<td width=25% id="B1" onmouseover="Software(TechSkills)" class="tableBorderc3 c3Bg" align="center">Software
 		</td>
-		<td width=25% id="B3" onmouseover="Engineering(TechSkills)" class="rect c3Color c4Bg" align="center">Engineering
+		<td width=25% id="B3" onmouseover="Engineering(TechSkills)" class="tableBorderc3 c4Bg" align="center">Engineering
 		</td>
-		<td width=25% id="B4" onmouseover="Equipment(TechSkills)" class="rect c3Color c4Bg" align="center">Hardware
+		<td width=25% id="B4" onmouseover="Equipment(TechSkills)" class="tableBorderc3 c4Bg" align="center">Hardware
 		</td>
 	</tr>
 	</table>
 	<table width=100%>
 	<td width=100%>
-	<div id="TechSkills"class="rect c3Color c4Bg borderRad2s" align="left">info</div>
+	<div id="TechSkills"class="rect rectc75 c7Bg borderRad2s" align="left"></div>
 	</td>
 	</table>
-
-	<script type="text/javascript">
-
-	function removeColour(x){
-		x.className = x.className.replace( /(?:^|\s)c4Bg(?!\S)/g , '' );
-	}
-	function addColour1(x){
-		x.className = "c4Bg"
-	}
-	function addColour2(x){
-		x.className = "c5Bg"
-	}
-	function removeAll(){
-		removeColour(document.getElementById("B1"));
-		removeColour(document.getElementById("B2"));
-		removeColour(document.getElementById("B3"));
-		removeColour(document.getElementById("B4"));
-	}
-	function Software(x){
-		x.innerHTML = '<a class="fontLarge">There are many pieces of software that can be used to do a job; I have learned a few of these in each area</a><br><br><table><tr><td>Office Products:</td><td><li class="horizontalPoints"> Word<li class="horizontalPoints"> Excel<li class="horizontalPoints"> PowerPoint</td></tr><tr><td>Computer-aided Design:</td><td><li class="horizontalPoints"> AutoCad<li class="horizontalPoints">Blender</td></tr><tr><td>Designs:</td><td><li class="horizontalPoints"> Adobe Dreamweaver<li class="horizontalPoints"> Adobe After Effects<li class="horizontalPoints"> Adobe Photoshop</td></tr></table>';
-		/*
-		<table>
-		<tr>
-		<td>
-		Office Products:
-		</td>
-		<td>
-		<li class="horizontalPoints"> Word
-		<li class="horizontalPoints"> Excel
-		<li class="horizontalPoints"> PowerPoint
-		</td>
-		</tr>
-	<tr>
-		<td>
-		Computer-aided Design:
-		</td>
-		<td>
-		<li class="horizontalPoints"> AutoCad
-		<li class="horizontalPoints">Blender
-		</td>
-		</tr>
-		<tr>
-		<td>
-		Designs:
-		</td>
-		<td>
-		<li class="horizontalPoints"> Adobe Dreamweaver
-		<li class="horizontalPoints"> Adobe After Effects
-		<li class="horizontalPoints"> Adobe Photoshop
-		</td>
-		</tr>
-	</table>
-		*/
-		removeAll()
-		addColour1(document.getElementById("B1"))
-		addColour2(document.getElementById("B2"))
-		addColour2(document.getElementById("B3"))
-		addColour2(document.getElementById("B4"))
-	}
-	function Programming(x){
-		x.innerHTML = "<a class='fontLarge'>I have Worked with many languages some fresh in my head and ready to go, and others which I will remember after a few references (It's like riding a bike)</a> <br><br><table><tr><td>Profecient:</td><td><li class='horizontalPoints'> Java</td></tr><tr><td>With Some Refrences:</td><td><li class='horizontalPoints'> C<li class='horizontalPoints'>C++<li class='horizontalPoints'> Python</td></tr><tr><td>Can work with references:</td><td><li class='horizontalPoints'> HTML<li class='horizontalPoints'> Flash</td></tr></table>";
-		/*<table>
-		<tr>
-		<td>
-		Profecient:
-		</td>
-		<td>
-		<li class="horizontalPoints"> Java
-		</td>
-		</tr>
-	<tr>
-		<td>
-		With Some Refrences:
-		</td>
-		<td>
-		<li class="horizontalPoints"> C
-		<li class="horizontalPoints">C++
-		<li class="horizontalPoints"> Python
-		</td>
-		</tr>
-		<tr>
-		<td>
-		Can work with references:
-		</td>
-		<td>
-		<li class="horizontalPoints"> HTML
-		<li class="horizontalPoints"> Flash
-		</td>
-		</tr>
-	</table>*/
-		removeAll()
-		addColour1(document.getElementById("B2"))
-		addColour2(document.getElementById("B1"))
-		addColour2(document.getElementById("B3"))
-		addColour2(document.getElementById("B4"))
-	}
-	function Engineering(x){
-		x.innerHTML = '<a class="fontLarge">I have been in my bachelors of Engineering for 2 years now and have picked up a few useful things</a><br><br><table><tr><td>Hardware:</td><td><li class="horizontalPoints"> Basic Circuit Design and Construction </td></tr><tr><td>Software</td><td><li class="horizontalPoints"> MatLab<li class="horizontalPoints">Maple</td></tr></table>';
-		/*
-		<table>
-		<tr>
-		<td>
-		Hardware:
-		</td>
-		<td>
-		<li class="horizontalPoints"> Basic Circuit Design and Construction 
-		</td>
-		</tr>
-	<tr>
-		<td>
-		Software
-		</td>
-		<td>
-		<li class="horizontalPoints"> MatLab
-		<li class="horizontalPoints">Maple
-		</td>
-		</tr>
-	</table>
-		*/
-		removeAll()
-		addColour1(document.getElementById("B3"))
-		addColour2(document.getElementById("B1"))
-		addColour2(document.getElementById("B2"))
-		addColour2(document.getElementById("B4"))
-	}
-	function Equipment(x){
-		x.innerHTML = '<a class="fontLarge">After working with many different pieces of hardware, I have learned to pickup interfacing quickly to make effective software</a><br><br><table><tr><td>Proprietary:</td><td><li class="horizontalPoints"> Fitbit<li class="horizontalPoints"> Myo ArmBand<li class="horizontalPoints"> Galaxy Gear</td></tr><tr><td>non-proprietary:</td><td><li class="horizontalPoints"> Arduino <li class="horizontalPoints">LightBlue Bean</td></tr></table>';
-		/*
-		I have Worked with many pieces of equipment both Proprietary and non-Proprietary. Learning how to interface quickly and effectively 
-	<br>
-	<br>
-	<table>
-		<tr>
-		<td>
-		Proprietary:
-		</td>
-		<td>
-		<li class="horizontalPoints"> Fitbit
-		<li class="horizontalPoints"> Myo ArmBand
-		<li class="horizontalPoints"> Galaxy Gear
-		</td>
-		</tr>
-	<tr>
-		<td>
-		non-proprietary:
-		</td>
-		<td>
-		<li class="horizontalPoints"> Arduino 
-		<li class="horizontalPoints">LightBlue Bean
-		</td>
-		</tr>
-	</table>*/
-		removeAll()
-		addColour1(document.getElementById("B4"))
-		addColour2(document.getElementById("B1"))
-		addColour2(document.getElementById("B2"))
-		addColour2(document.getElementById("B3"))
-	}
-	 window.onload = Programming(TechSkills);
-	</script>
 </div>
-<div class="cardResume c3Color c2Bg borderResumec2 borderRad2" >
-	Extracuriculars
+
+<div onmouseenter="highlight(this); highlightHead('RH4');" onmouseleave="dehighlight(this);dehighlightHead('RH4');" class="cardResume c1Color c7Bg borderResumec7 borderRad2" >
+	<a id="RH4"class="c1Color headerExtraSmall"> Extracuriculars</a>
 	<hr>
-	<span style="float: left;">Student Member, McMaster  Sumobots</b></span>
+	<span style="float: left;">McMaster  Sumobots | Junior Member</b></span>
 	<span style="float: right;">2015 - Present</b></span>
 	<br>
-	<span style="float: left;">Student Member, Tamil Student Association</b></span>
+	<span style="float: left;">Tamil Student Association | Student Member</b></span>
 	<span style="float: right;">2014 - Present</b></span>
 	<br>
-	<span style="float: left;">Student Member, McMaster Computer Science Association</b></span>
+	<span style="float: left;">McMaster Computer Science Association | Student Member</b></span>
 	<span style="float: right;">2014 - Present</b></span>
 	<br>
-	<span style="float: left;">Student Member, McMaster Design Club</b></span>
+	<span style="float: left;">McMaster Design Club | Student Member</b></span>
 	<span style="float: right;">2014 - Present</b></span>
 	<br>
 	
 </div>
-</body>
+<script src="Scripts/Resume.js">
+</script>
+<script src="Scripts/TechnicalSkills.js">
+</script>
+<script type="text/javascript">
+window.onload = Programming(TechSkills);dehighlightSkills();
+</script>
 </html>
