@@ -23,7 +23,12 @@ a.topLinksMakeHeight{margin: 2%; font-size: 150%;}
 
 a.c3Link:hover{text-decoration:none; color: /*c7*/#EEEEEE;}
 a.c3Link{text-decoration:none; color: /*c3*/#FFFFFF;}
-img{max-width: 300px;}
+img.W400{max-width: 400px;}
+img.W350{max-width: 350px;}
+img.W300{max-width: 300px;}
+img.W200{max-width: 200px;}
+img.W150{max-width: 150px;}
+img.W100{max-width: 100px;}
 
 .c1Color{color: /*c1*/#000000;}
 .c2Color{color: /*c2*/#101010;}
