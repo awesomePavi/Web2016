@@ -29,6 +29,16 @@ img.W300{max-width: 300px;}
 img.W200{max-width: 200px;}
 img.W150{max-width: 150px;}
 img.W100{max-width: 100px;}
+img.W90{max-width: 90px;}
+img.W80{max-width: 80px;}
+
+tr.bottomBorderC1 td {border-bottom:1pt solid /*c1*/#000000;}
+tr.bottomBorderC2 td {border-bottom:1pt solid /*c2*/#101010;}
+tr.bottomBorderC3 td {border-bottom:1pt solid /*c3*/#FFFFFF;}
+tr.bottomBorderC4 td {border-bottom:1pt solid /*c4*/#009F33;}
+tr.bottomBorderC5 td {border-bottom:1pt solid /*c5*/#042915;}
+tr.bottomBorderC6 td {border-bottom:1pt solid /*c6*/#5B5B5B;}
+tr.bottomBorderC7 td {border-bottom:1pt solid /*c7*/#EEEEEE;}
 
 .c1Color{color: /*c1*/#000000;}
 .c2Color{color: /*c2*/#101010;}
@@ -110,6 +120,13 @@ img.W100{max-width: 100px;}
 .borderResumec5{border:15px solid /*c5*/#042915;}
 .borderResumec6{border:15px solid /*c6*/#5B5B5B;}
 .borderResumec7{border:15px solid /*c7*/#EEEEEE;}
+.borderResumemac{border:15px solid /*mac*/#990033;}
+.borderResumenhs{border:15px solid /*nhs*/#800080;}
+.borderResumeCTW{border:15px solid /*CTW*/#4fb5ef;}
+.borderResumeHW{border:15px solid /*HW*/#463EAC;}
+.borderResumeHET{border:15px solid /*HET*/#8ec641;}
+
+
 
 .tableBorderc1{border-style: solid; border-color: /*c1*/#000000;}
 .tableBorderc2{border-style: solid; border-color: /*c2*/#101010;}
