@@ -28,8 +28,10 @@ a.c3Link{text-decoration:none; color: /*c3*/#FFFFFF;}
 img.W400{max-width: 400px;}
 img.W350{max-width: 350px;}
 img.W300{max-width: 300px;}
+img.W250{max-width: 250px;}
 img.W200{max-width: 200px;}
 img.W150{max-width: 150px;}
+img.W140{max-width: 140px;}
 img.W100{max-width: 100px;}
 img.W90{max-width: 90px;}
 img.W80{max-width: 80px;}
@@ -71,7 +73,7 @@ tr.bottomBorderC7 td {border-bottom:1pt solid /*c7*/#EEEEEE;}
 .CTWBg{background: /*CTW*/#4fb5ef;}
 .HWBg{background: /*HW*/#463EAC;}
 .HETBg{background: /*HET*/#8ec641;}
-.LCBg{background: /*LC*/#DDDDDD;}
+.LCBg{background: /*LC*/#FFFFFF;}
 .MGBg{background: /*MG*/#F6F6CC ;}
 .HGBg{background: /*HG*/#07bbff;}
 
@@ -138,8 +140,9 @@ tr.bottomBorderC7 td {border-bottom:1pt solid /*c7*/#EEEEEE;}
 .borderResumeCTW{border:15px solid /*CTW*/#4fb5ef;}
 .borderResumeHW{border:15px solid /*HW*/#463EAC;}
 .borderResumeHET{border:15px solid /*HET*/#8ec641;}
-
-
+.borderResumeLC{border:15px solid /*LC*/#FFFFFF;}
+.borderResumeMG{border:15px solid /*MG*/#F6F6CC ;}
+.borderResumeHG{border:15px solid /*HG*/#07bbff;}
 
 .tableBorderc1{border-style: solid; border-color: /*c1*/#000000;}
 .tableBorderc2{border-style: solid; border-color: /*c2*/#101010;}
