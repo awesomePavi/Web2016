@@ -13,6 +13,8 @@ nhs       #800080
 CTW       #007CC2
 HW        #463EAC
 HET       #00A652
+MG        #F6F6CC
+HG        #b3ffff 
 */
 
 a.topLinks:hover {border-style:  solid; border-color: /*c3*/#FFFFFF #000000; font-size: 150%;}
@@ -53,6 +55,10 @@ tr.bottomBorderC7 td {border-bottom:1pt solid /*c7*/#EEEEEE;}
 .HWColor{color: /*HW*/#463EAC;}
 .HETColor{color: /*HET*/#8ec641;}
 
+.LCColorLight{color: /*LC*/#6fafd2 ;}
+.MGColorLight{color: /*MG*/#9f9089 ;}
+.HGColorLight{color: /*HG*/#0042D1;}
+
 .c1Bg{background: /*c1*/#000000;}
 .c2Bg{background: /*c2*/#101010;}
 .c3Bg{background: /*c3*/#FFFFFF;}
@@ -65,6 +71,9 @@ tr.bottomBorderC7 td {border-bottom:1pt solid /*c7*/#EEEEEE;}
 .CTWBg{background: /*CTW*/#4fb5ef;}
 .HWBg{background: /*HW*/#463EAC;}
 .HETBg{background: /*HET*/#8ec641;}
+.LCBg{background: /*LC*/#DDDDDD;}
+.MGBg{background: /*MG*/#F6F6CC ;}
+.HGBg{background: /*HG*/#07bbff;}
 
 .fontSmall{font-size: 70%;}
 .fontMedium{font-size: 80%;}
@@ -102,6 +111,10 @@ tr.bottomBorderC7 td {border-bottom:1pt solid /*c7*/#EEEEEE;}
 	min-height: 50px;
 	padding-: 10px;
 	margin: 10px;
+}
+.cardNoMin{
+  padding-: 10px;
+  margin: 10px;
 }
 
 .resumeBtn {

@@ -32,12 +32,49 @@ function EduHBye(){
 	document.getElementById("NHSToFill").innerHTML = "";
 }
 //-------------------------------------------//
+//-------------  Work Experince -------------//
+//-------------------------------------------//
+function WELC(){
+	closeOff();
+	document.getElementById("LCStuff").className="LCBg rect widFullCard c1Color";
+	document.getElementById("LCfill").innerHTML='<table>                        <tr>                          <td>                            <li></li>                          </td>                          <td>                            Created algorithm to prioritize customers in order to maximize profits within the \'sale period\'                          </td>                        </tr>                        <tr>                          <td></td>                          <td>                            <a class="fontSmall"></a>                          </td>                        </tr>                        <tr>                          <td>                            <li></li>                          </td>                          <td>                            Interacted with a high volume of customers daily demonstrating strong communication skills                          </td>                        </tr>                        <tr>                          <td></td>                          <td>                            <a class="fontSmall"></a>                          </td>                        </tr>                        <tr>                          <td>                            <li></li>                          </td>                          <td>                            Taught co-workers how to integrate given tablets into their sales pitch                          </td>                        </table>                        <br>';
+	document.getElementById("RH6").className="LCColorLight headerExtraSmall";
+}
+function WELCBye(){
+	document.getElementById("LCStuff").className="rect widFullCard";
+	document.getElementById("LCfill").innerHTML="";
+	document.getElementById("RH6").className="c4Color headerExtraSmall"
+}
+function WEMG(){
+	closeOff();
+	document.getElementById("MGStuff").className="MGBg rect widFullCard c1Color";
+	document.getElementById("MGfill").innerHTML='<table>                            <tr>                              <td>                                <li></li>                              </td>                              <td>                                Designed and implemented a new organizational software to increase efficiency                              </td>                            </tr>                            <tr>                              <td></td>                              <td>                                <a class="fontSmall"></a>                              </td>                            </tr>                            <tr>                              <td>                                <li></li>                              </td>                              <td>Reorganized system for documenting billable hours</td>                            </tr>                            <tr>                              <td></td>                              <td>                                <a class="fontSmall"></a>                              </td>                            </tr>                            <tr>                              <td>                                <li></li>                              </td>                              <td>Analyzed income statements and assisted with trend prediction</td>                            </tr>                          </table>                          <br>';
+	document.getElementById("RH6").className="MGColorLight headerExtraSmall";
+}
+function WEMGBye(){
+	document.getElementById("MGStuff").className="rect widFullCard";
+	document.getElementById("MGfill").innerHTML="";
+	document.getElementById("RH6").className="c4Color headerExtraSmall"
+}
+function WEHG(){
+	closeOff();
+	document.getElementById("HGStuff").className="HGBg rect widFullCard c1Color";
+	document.getElementById("HGfill").innerHTML='<table>                              <tr>                                <td>                                  <li></li>                                </td>                                <td>                                  Tracked incoming and outgoing vehicles to ensure owners would not drive off without paying                                 </td>                              </tr>                              <tr>                                <td></td>                                <td>                                  <a class="fontSmall"></a>                                </td>                              </tr>                              <tr>                                <td>                                  <li></li>                                </td>                                <td>                                  Upsold promotions to customers as well as the loyalty program, registering up to 50 new members a shift                                </td>                              </tr>                              <tr>                                <td></table>                                <br>';
+	document.getElementById("RH6").className="HGColorLight headerExtraSmall";
+}
+function WEHGBye(){
+	document.getElementById("HGStuff").className="rect widFullCard";
+	document.getElementById("HGfill").innerHTML="";
+	document.getElementById("RH6").className="c4Color headerExtraSmall"
+}
+
+//-------------------------------------------//
 //-----------  Relevant Experince -----------//
 //-------------------------------------------//
 function REHW(){
 	closeOff();
 	document.getElementById("HWimg").style.width = "40%";
-	document.getElementById("HWdev").innerHTML='<br><a href="http://devpost.com/software/welcome-to-canada-u31nph" class="noDecoration center" ><table style="margin: 0px auto;"><td><img src="Icons/DevPost.png" width="70em"></img></td><td><a class="noDecoration c3Link">DevPost</a></td></table></a><br>';
+	document.getElementById("HWdev").innerHTML='<br><a href="http://devpost.com/software/welcome-to-canada-u31nph" class="noDecoration center" ><table style="margin: 0px auto;"><td><img src="Icons/DevPost.png" width="60em"></img></td><td><a class="noDecoration c3Link">DevPost</a></td></table></a><br>';
 	document.getElementById("RH5").className="HWColor headerExtraSmall";
 	document.getElementById("HWStuff").className="HWBg rect widFullCard c3Color";
 	document.getElementById("HWfill").innerHTML='Project:<br><table>   <tr>    <td class="HWColor">     <li></li>    </td>    <td>     <a href="Portfolio.html#AboutCanada" class="noDecoration c3Link">     Worked with a team of 4 to create an android application targeted toward immigrants that have just arrived in Canada in order to help make the transition simpler. (Full Details in Portfolio)     </a>    </td>   </tr>   </table>   <bR>Experience:<br><table>   <tr>    <td>     <li></li>    </td>    <td>     First time making a successful live online lookup system. This was used to translate common words into the users native language    </td>   </tr>  <tr><td></td><td><a class="fontSmall"></a></td></tr> <tr>    <td>     <li></li>    </td>    <td>     First full fledged functional android application, created from scratch start to finish    </td>   </tr></table><br><a class="fontSmall"></a>'
@@ -87,8 +124,12 @@ function closeOff(){
 	REHWBye();
 	RECTWBye();
 	REHETBye();
+	WEHGBye();
+	WEMGBye();
+	WELCBye();
 	document.getElementById("RH2").className="c1Color headerExtraSmall";
 	document.getElementById("RH5").className="c1Color headerExtraSmall";
+	document.getElementById("RH6").className="c1Color headerExtraSmall";
 }
 function replaceEle(x,y,z){
 	document.getElementById(x).className=document.getElementById(x).className.replace(y, z);
