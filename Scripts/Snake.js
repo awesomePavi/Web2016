@@ -72,7 +72,7 @@ function interface(event) {
    if (keyIn==13 && !GameRunning){
    		GameRunning=true;
    		//game clcok
-   		gameRun=setInterval(function(){GameLoop();DrawGame();},1000/25);
+   		gameRun=setInterval(function(){GameLoop();DrawGame();},1000/20);
    }
    else if (keyIn==40) //Arrow down
    		dir=keyIn;
