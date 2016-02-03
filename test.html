@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="StyleSheets/ResumeStyleSheet.css" rel="stylesheet" type="text/css">
+	<title>Page Not Found</title>
+</head>
+	<link rel="shortcut icon" href="Icons/web-ico-infi.png">
+<body background="BackGround/ContactBG.png" onkeydown="interface(event)">
+<br>
+<div id="rm404">
+<div id="404-info">
+	<a id ="tmp" class="headerExtraLarge c7Color center"> 404</a>
+	<a id ="tmp" class="headerMedium c7Color center"> Page Not Found</a>
+	<br>
+	<a id ="tmp" class="headerExtraSmall c7Color center"> But since your here press a key, and lets kill some time</a>
+</div>
+</div>
+<br>
+<div id="rmGame">
+<div id="GAMEAREA">
+	<a id ="tmp" class="headerExtraLarge c7Color center"> 404 - Snake</a>
+	<a id ="score" class="headerMedium c7Color center">Score: 0</a>
+	<br>
+	<canvas id="Game" class="center" > 
+	</canvas>
+	<br>
+	<br>
+	<table width="100%" class="headerExtraSmall c7Color">
+		<tr>
+		<td width="10%"></td>
+		<td>
+		TO MOVE: Arrow Keys
+		</td>
+		</tr>
+		<tr><td width="10%"></td>
+		<td>
+		OBJECTIVE: To eat the green circles and achieve the highest score
+		</td>
+		</tr>
+		<tr>
+		<td width="10%"></td>
+		<td>
+		RULES: If you eat your tail you will lose
+		</td>
+		</tr>
+		</table>
+</div>
+<div id="GameOver">
+	<a id ="tmp" class="headerExtraLarge c7Color center"> 404 - You Lose</a>
+	<a id ="tmp" class="headerMedium LinkLineG center c7Color" href="index.html"> How about we go back to the site now</a>
+	<br>
+	<a id ="tmp" class="headerExtraSmall c7Color center">OR</a>
+	<br>
+	<a id ="scoreLose" class="headerExtraSmall c7Color center">press to play again</a>
+</div>
+</div>
+</body>
+<script src="scripts/Snake.js">
+	
+</script>
+<script type="text/javascript">
+	window.onload=setUpCanvas(); window.onload=removeGame(); 
+</script>
+<!--<script type="text/javascript">window.onload = setUpCanvas(); window.onload = pressToPlay("Since you're here press any key to play");</script>-->
+</html>
