@@ -16,6 +16,16 @@ var gameSpace, x,y,length,dir, gameRun, candx, candy,score,gameArea, Area404, Ga
 var running=false;
 var GameRunning=false;
 
+function setSize(){
+	if (window.innerWidth<window.innerHeight){
+	 	width = Math.round(window.innerWidth*.8/size)*size;
+         	height = Math.round(window.innerWidth*.4/size)*size;
+	}else{
+		width = Math.round(window.innerHeight*.8/size)*size;
+		height = Math.round(window.innerHeight*.4/size)*size;	
+	}
+}
+
 //To reset VAlues between Games
 function setVals(){
 	x=[Math.round(width/(2*size))*size,Math.round(width/(2*size))*size,Math.round(width/(2*size))*size,Math.round(width/(2*size))*size];
