@@ -209,7 +209,7 @@ function DrawGame(){
 	gameSpace.clearRect(0,0,width,height);
 	//draw head
 	gameSpace.fillStyle = "#0000FF"
-	gameSpace.fillRect(x[0],y[0],size,size);
+	gameSpace.fillRect(x[0],y[0]-size,size,size);
 	//draw body
 	gameSpace.fillStyle = "#FF0000"
 	for (i=1;i<length;i++){
