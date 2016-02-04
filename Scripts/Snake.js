@@ -50,7 +50,7 @@ function removeGame(){
 //set up game area
 function setUpCanvas(){
 	tmp=document.getElementById("Game");
-	tmp.style="border: 5px solid gray";
+	tmp.style="border: 5px solid gray;";
 	tmp.width = width;
 	tmp.height = height;
 	gameSpace= tmp.getContext("2d");
@@ -102,12 +102,25 @@ function resetCand(){
 	//updaet score and replace candy
 	scoreUpdate();
 	candx=Math.round(Math.random()*width/size)*size;
-		candy=Math.round(Math.random()*height/size)*size;
+	candy=Math.round(Math.random()*height/size)*size;
 	//ensure candy is not under snakes body
-	while(isSnake(candx,candy)){
+	while(isSnake(candx,candy)&&outOfBounds(candX,candy)){
 		candx=Math.round(Math.random()*width/size)*size;
 		candy=Math.round(Math.random()*height/size)*size;
 	}
+}
+
+//ensure candy is not placed in places unaccesbile by palyer
+function outOfBounds(x,y){
+	if(x<0)
+   		return true;
+   	else if (x[0]>width-1)
+   		return true;
+   	else if (y[0]<0)
+   		return true
+   	else if (y[0]>height-1)
+   		return true;
+   	return false;
 }
 
 //update score
@@ -126,6 +139,7 @@ function isSnake(xT,yT){
 
 //main game loop
 function GameLoop(){
+
 	//if food is eaten
 	if(x[0]==candx && y[0]==candy){
 		resetCand();
@@ -146,6 +160,8 @@ function GameLoop(){
    		curDir=dir;
    	else if(dir==39 && !(curDir==37)) //Arrow right
    		curDir=dir;
+   	 else if(dir==87) //Arrow right
+   		resetCand();
 
    	//move the snake in it's current direction
 	if (curDir==40) //Arrow down
