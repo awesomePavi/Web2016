@@ -9,7 +9,7 @@
 // A 			  65
 // D 			  68
 //Varaibles used
-const size =10;
+var size = Math.round(window.innerWidth/150);
 var width = Math.round(window.innerWidth*.8/size)*size;
 var height = Math.round(window.innerWidth*.4/size)*size;
 var gameSpace, x,y,length,dir, gameRun, candx, candy,score,gameArea, Area404, Game404,curDir;
@@ -17,12 +17,14 @@ var running=false;
 var GameRunning=false;
 
 function setSize(){
+	if (size<10)
+		size=10;
 	if (window.innerWidth<window.innerHeight){
-	 	width = Math.round(window.innerWidth*.8/size)*size;
+	 	width = window.innerWidth;//Math.round(window.innerWidth*.9/size)*size;
          	height = Math.round(window.innerWidth*.4/size)*size;
 	}else{
-		width = Math.round(window.innerHeight*.8/size)*size;
-		height = Math.round(window.innerHeight*.4/size)*size;	
+		width = window.innerWidth;//Math.round(window.innerWidth*1/size)*size;
+		height = Math.round(window.innerHeight*.6/size)*size;	
 	}
 }
 
@@ -50,7 +52,6 @@ function removeGame(){
 //set up game area
 function setUpCanvas(){
 	tmp=document.getElementById("Game");
-	tmp.style="border: 5px solid gray;";
 	tmp.width = width;
 	tmp.height = height;
 	gameSpace= tmp.getContext("2d");
@@ -104,21 +105,21 @@ function resetCand(){
 	candx=Math.round(Math.random()*width/size)*size;
 	candy=Math.round(Math.random()*height/size)*size;
 	//ensure candy is not under snakes body
-	while(isSnake(candx,candy)&&outOfBounds(candX,candy)){
+	while(isSnake(candx,candy)||outOfBounds(candx,candy)){
 		candx=Math.round(Math.random()*width/size)*size;
 		candy=Math.round(Math.random()*height/size)*size;
 	}
 }
 
-//ensure candy is not placed in places unaccesbile by palyer
+//ensure candy is placed in a preferable area
 function outOfBounds(x,y){
-	if(x<0)
+	if(x<(2*size))
    		return true;
-   	else if (x[0]>width-1)
+   	else if (x>(width-(2*size)))
    		return true;
-   	else if (y[0]<0)
+   	else if (y<(2*size))
    		return true
-   	else if (y[0]>height-1)
+   	else if (y>(height-(2*size)))
    		return true;
    	return false;
 }
@@ -176,11 +177,11 @@ function GameLoop(){
    	//the edge overflow, to loop the snake
    	if(x[0]<0)
    		x[0]=width-size;
-   	else if (x[0]>width-1)
-   		x[0]=10;
+   	else if (x[0]>width-size)
+   		x[0]=0;
    	else if (y[0]<0)
    		y[0]=height-size;
-   	else if (y[0]>height-1)
+   	else if (y[0]>height-size)
    		y[0]=0;
 
    	//if the snake is eating itself end the game
@@ -208,15 +209,15 @@ function DrawGame(){
 	//erase game area
 	gameSpace.clearRect(0,0,width,height);
 	//draw head
-	gameSpace.fillStyle = "#0000FF"
+	gameSpace.fillStyle = "#009F33"
 	gameSpace.fillRect(x[0],y[0],size,size);
 	//draw body
-	gameSpace.fillStyle = "#FF0000"
+	gameSpace.fillStyle = "#00FF00"
 	for (i=1;i<length;i++){
 		gameSpace.fillRect(x[i],y[i],size,size);
 	}	
 	//draw candy
-	gameSpace.fillStyle = "#00FF00"
+	gameSpace.fillStyle = "#FF5522"
 	gameSpace.beginPath();
 	gameSpace.arc(candx+(size/2),candy+(size/2), size/2, 0, Math.PI*2, true); 
 	gameSpace.closePath();

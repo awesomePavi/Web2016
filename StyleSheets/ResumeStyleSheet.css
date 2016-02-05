@@ -29,16 +29,16 @@ a.c3Link{text-decoration:none; color: /*c3*/#FFFFFF;}
 a.LinkLineG:hover{text-decoration:none; border-style:  solid; border-color: /*c4*/#009F33 #000000; color: /*c4*/#009F33;}
 a.LinkLineG{text-decoration:none;}
 
-img.W400{max-width: 400px;}
-img.W350{max-width: 350px;}
-img.W300{max-width: 300px;}
-img.W250{max-width: 250px;}
-img.W200{max-width: 200px;}
-img.W150{max-width: 150px;}
-img.W140{max-width: 140px;}
-img.W100{max-width: 100px;}
-img.W90{max-width: 90px;}
-img.W80{max-width: 80px;}
+.W400{max-width: 400px;}
+.W350{max-width: 350px;}
+.W300{max-width: 300px;}
+.W250{max-width: 250px;}
+.W200{max-width: 200px;}
+.W150{max-width: 150px;}
+.W140{max-width: 140px;}
+.W100{max-width: 100px;}
+.W90{max-width: 90px;}
+.W80{max-width: 80px;}
 
 tr.bottomBorderC1 td {border-bottom:1pt solid /*c1*/#000000;}
 tr.bottomBorderC2 td {border-bottom:1pt solid /*c2*/#101010;}
