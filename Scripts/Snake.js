@@ -10,7 +10,7 @@
 // D 			  68
 //Varaibles used
 var size = Math.round(window.innerWidth/150);
-var width = Math.round(window.innerWidth*.8/size)*size;
+var width = window.innerWidth;//Math.round(window.innerWidth*.8/size)*size;
 var height = Math.round(window.innerWidth*.4/size)*size;
 var gameSpace, x,y,length,dir, gameRun, candx, candy,score,gameArea, Area404, Game404,curDir;
 var running=false;
@@ -211,16 +211,25 @@ function DrawGame(){
 	//draw head
 	gameSpace.fillStyle = "#009F33"
 	gameSpace.fillRect(x[0],y[0],size,size);
+
 	//draw body
 	gameSpace.fillStyle = "#00FF00"
 	for (i=1;i<length;i++){
 		gameSpace.fillRect(x[i],y[i],size,size);
 	}	
+	gameSpace.strokeStyle="#009F33";
+	for (i=1;i<length;i++){
+		gameSpace.strokeRect(x[i],y[i],size,size);
+	}
 	//draw candy
 	gameSpace.fillStyle = "#FF5522"
+	gameSpace.strokeStyle="#000000";
+	gameSpace.strokeRect(x[0],y[0],size,size);
 	gameSpace.beginPath();
 	gameSpace.arc(candx+(size/2),candy+(size/2), size/2, 0, Math.PI*2, true); 
 	gameSpace.closePath();
 	gameSpace.fill();
+	gameSpace.stroke();
+
 
 }
