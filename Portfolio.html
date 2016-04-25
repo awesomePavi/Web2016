@@ -32,6 +32,66 @@
 <!--1x1 images = 80%--->
 <!--9x16 images = 50%-->
 
+
+<!--Weather Station Analyzer-->
+<div class="c2Bg">
+	<br>
+	<table width=90% align="center">
+		<td width=30% align="center">
+			<img src="Images/Weather.png" width="80%" align="center">
+		</td>
+
+		<td width=70%>
+			<a name="PersonalWeb"class="c4Color headerSmall">
+				Weather Station Analyzer
+			</a>
+			<br>
+			<p class="c3Color fontMedium" style="line-height: 20%;">
+				Language: HTML; CSS; Javascript; Ruby;
+			</p>
+			<p class="c3Color fontMedium" style="line-height: 20%;">
+				Api: D3; Sinatra;
+			</p>
+			<p class="c3Color fontMedium" style="line-height: 20%;">
+				Created: 02/22/16
+			</p>
+			<p class="c3Color fontMedium" style="line-height: 20%;">
+				Time Span: 2 Months
+			</p>
+			<p class="c3Color fontMedium" style="line-height: 20%;">
+				Team Size: 4
+			</p>
+			<p class="c3Color fontMedium" style="line-height: 20%;">
+				Reason: School - Data Analysis Project
+			</p>
+			<p></p>
+			<a class="c3Color">
+				This application's intended purpose is to identify weather stations which are not required and may be relocated. The application does this by first placing all stations in a un-directed edge weighted graph,
+				After this the graph is converted into a minimum spanning tree while only keeping edges between stations whom's weather data is accurate to one another's within the user's specified tolerances. At this point the nodes with the greatest number of edges is remvoed,
+				which leaves one fo three node types. The first are stations whcih cannot be used to predict other stations, the seconds stations used to predict stations, and the third stations predicted. At this point the program then
+				checks if the new layout is still accurate within user tolerances and to do this the program checks the alyout over two additonal years. At this point all data processing has been completed where it is put into a json file and is displayed for the user.
+				<br>
+				<br>
+				On the technical side, the program use a Model View Controller design. The Model being the backend whcih is built in ruby and harnesses an SQLite3 database for the data storage and manipulation. The Controller is the server which uses the Sinatra API to effectively connect the Front-end to the Back-end. The View is written in HTML/CSS/Java-Script, and uses an electron wrapper to allow it to act as a standalone application.
+				<br>
+				<br>
+				<a style="color: red;">
+					Working out a few final bugs, GitHub will be available soon  <!--Bootstrap 3? -->
+				</a>
+			</a>
+		</td>
+	</table>
+	<br>
+</div>
+<div class="c5Bg"  align="center">
+	<a class="noDecoration c3Color " href="https://drive.google.com/file/d/0Bw2B-7OLfsDAY1ZyeThrNmpmZFk/view?usp=sharing">
+		Available via Google Drive <img class="iconAlign iconFontSmall padding5" src="Icons/drive.png">
+	</a>
+	<br>
+</div>
+<Br>
+<br>
+
 <!--Personal WebSite-->
 <div class="c2Bg">
 	<br>
@@ -63,6 +123,11 @@
 		<p></p>
 		<a class="c3Color">
 			      This is my personal website. Hosted via GitHub and with a domain name provided by name cheap. I created this website because I wanted a way to showcase my CV easily for everyone to see, and so I can keep track of what I've done. I dabbled with WordPress, which boasts an intuitive interface, but I found it cumbersome and was unable to find the layout that I desired. At this point I decided since I knew enough about HTML and CSS, from when I played with it in high school, I would construct my own site from scratch. I took out my pencil and paper drew out a design, chose a colour palette, and got to work.
+			</a>
+			<br>
+			<br>
+			<a style="color: red;">
+				Currently working on new website with updated colour scheme and Responsive Design <!--Bootstrap 3? -->
 			</a>
 		</td>
 	</table>
