@@ -1,0 +1,59 @@
+/* Tablets / Desktop // All*/
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: #DDDDDD;
+        color: #666666;
+    }
+
+
+
+/*tablet // Desktop    */
+
+@media (min-width: 600px) {
+    .ResponseBox1{display: inline-block; width: 50%}
+
+    body{
+     /* background:linear-gradient(to bottom right, #e6e6e6,#aaaaaa)*/
+
+    }
+    #Mobile{display: none}
+}
+
+/*Phones*/
+@media (min-width: 360px) and (max-width: 600px) {
+    .ResponseBox1{
+        display: block;
+        width: 100%}
+
+
+    .Button{
+        margin: 3px 12px 8px 12px;
+        width:auto;
+        height:15%;
+        background-color: rgba(70%,70%,70%,0.5);
+
+        color: white;
+
+        padding-top: 7px;
+        padding-bottom: 7px;
+
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    img{ width: 100%;}
+    #Desktop{display: none}
+}
+
+/*I-Phone 4 and lower*/
+@media (max-width: 360px) {
+    body{background-color: green}
+}
