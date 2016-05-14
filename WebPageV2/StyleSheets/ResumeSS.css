@@ -57,7 +57,7 @@
 }
 
 /*Phones*/
-@media (max-width: 600px) {
+@media only screen and (max-device-width: 600px) {
     .ResponseBox1{
         display: block;
         width: 100%}
