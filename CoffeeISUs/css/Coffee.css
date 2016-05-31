@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.coffee {
+
+}
+
+.coffee .jumbotron {
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #000;
+  background-image: url(../img/Shop.jpg) ;
+ background-size:cover;
+ background-position:center;
+}
+
+.modal-xls{
+  width: 90%;
+  height: 100%;
+  padding: 0;
+}

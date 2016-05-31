@@ -17,7 +17,7 @@
 
 /*tablet // Desktop    */
 
-@media (min-width: 800px) {
+@media only screen and (min-device-width: 600px) {
     .ResponseBox1{display: inline-block; width: 50%}
 
     body{
@@ -25,35 +25,6 @@
 
     }
     #Mobile{display: none}
-}
-
-/*Phones*/
-@media (max-width: 800px) {
-    Body{
-        background-color: #00FF00;
-    }
-    .ResponseBox1{
-        display: block;
-        width: 100%}
-
-
-    .Button{
-        margin: 3px 12px 8px 12px;
-        width:auto;
-        height:15%;
-        background-color: rgba(70%,70%,70%,0.5);
-
-        color: white;
-
-        padding-top: 7px;
-        padding-bottom: 7px;
-
-        text-align: center;
-        font-size: 1.4em;
-    }
-
-    img{ width: 100%;}
-    #Desktop{display: none}
 }
 
 /*Phones*/
@@ -83,6 +54,6 @@
 }
 
 /*I-Phone 4 and lower*/
-@media (max-width: 360px) {
+@media only screen and (max-device-width: 360px) {
     body{background-color: green}
 }
